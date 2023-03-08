@@ -1,25 +1,45 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react'
 
-function App() {
+
+function App1() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <h1>Register here</h1>
+        <App2 />
+        <App3 />
+        <App4 />
+      </div>
+    </>
   );
 }
 
-export default App;
+
+function App2() {
+  return (
+    <div>
+      <input type={"text"} placeholder="mobile"  ></input>
+    </div>
+  )
+}
+
+function App3() {
+  return (
+    <div>
+      <input type={"password"} placeholder="password"  ></input>
+    </div>
+  )
+}
+
+function App4() {
+  return (
+    <div>
+      <button>submit</button>
+    </div>
+  )
+}
+
+
+export default App1;
